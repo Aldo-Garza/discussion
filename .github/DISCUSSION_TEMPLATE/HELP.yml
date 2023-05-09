@@ -16,6 +16,7 @@ body:
     attributes:
       label: ¿A qué área corresponde tu pregunta?
       options:
+        - Otra
         - Código de backend
         - Código de frontend
         - Reglas de negocio
