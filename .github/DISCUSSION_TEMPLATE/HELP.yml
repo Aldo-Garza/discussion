@@ -1,55 +1,31 @@
-title: "Pregunta"
-labels: ["Escribe tu pregunta de manera general"]
+title: "Escribe tu pregunta de manera general"
+labels: ["help"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        This is text that will show up in the template!
   - type: textarea
-    id: improvements
+    id: descripcion
     attributes:
-      label: Top 3 improvements
-      description: "What are the top 3 improvements we could make to this project?"
+      label: Tu pregunta
+      description: "Describe de manera detallada tu pregunta para que alguien te pueda apoyar"
       value: |
-        1.
-        2.
-        3.
-        ...
+        No puedo arrancar el proyecto me aparece que ........
       render: bash
     validations:
       required: true
-  - type: markdown
+  - type: dropdown
+    id: area
     attributes:
-      value: |
-        ## Markdown header
-        And some more markdown
+      label: ¿A qué área corresponde tu pregunta?
+      options:
+        - Código de backend
+        - Código de frontend
+        - Reglas de negocio
+        - Problemas de ambiente
+    validations:
+      required: true
   - type: input
     id: has-id
     attributes:
-      label: Suggestions
-      description: A description about suggestions to help you
+      label: Comentarios
+      description: Si tienes algún comentario adicional escríbelo aquí
     validations:
-      required: true
-  - type: dropdown
-    id: download
-    attributes:
-      label: Which area of this project could be most improved?
-      options:
-        - Documentation
-        - Pull request review time
-        - Bug fix time
-        - Release cadence
-    validations:
-      required: true
-  - type: checkboxes
-    attributes:
-      label: Check that box!
-      options:
-        - label: This one!
-          required: true
-        - label: I won't stop you if you check this one, too
-  - type: markdown
-    attributes:
-      value: |
-        ### The thrilling conclusion
-        _to our template_
+      required: false
