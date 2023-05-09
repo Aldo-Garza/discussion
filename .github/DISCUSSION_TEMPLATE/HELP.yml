@@ -1,5 +1,5 @@
-title: "[General] "
-labels: ["General Introduction"]
+title: "Pregunta"
+labels: ["Escribe tu pregunta de manera general"]
 body:
   - type: markdown
     attributes:
