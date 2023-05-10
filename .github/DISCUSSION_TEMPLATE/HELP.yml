@@ -12,6 +12,16 @@ body:
     validations:
       required: true
   - type: dropdown
+    id: urgencia
+    attributes:
+      label: Urgencia
+      options:
+        - Alta (me bloquea mi actividad)
+        - Media
+        - Baja
+    validations:
+      required: true
+  - type: dropdown
     id: area
     attributes:
       label: ¿A qué área corresponde tu pregunta?
