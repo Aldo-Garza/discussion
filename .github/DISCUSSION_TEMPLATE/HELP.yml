@@ -27,8 +27,7 @@ body:
       label: ¿A qué área corresponde tu pregunta?
       options:
         - Otra
-        - Código de backend
-        - Código de frontend
+        - Código
         - Reglas de negocio
         - Problemas de ambiente
     validations:
