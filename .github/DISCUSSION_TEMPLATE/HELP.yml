@@ -24,11 +24,24 @@ body:
   - type: dropdown
     id: area
     attributes:
-      label: ¿A qué área corresponde tu pregunta?
+      label: ¿A qué módulo corresponde tu pregunta?
       options:
-        - Otra
+        - Tracking
+        - NHO
+        - Adherencia
+        - Inventario
+        - Performance
+        - Colaboradores
+        - (Otro, especifique en comentario)
+    validations:
+      required: true
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: ¿Qué tipo de problema se te presenta?
+      options:
         - Código
-        - Reglas de negocio
+        - No entender algo
         - Problemas de ambiente
     validations:
       required: true
